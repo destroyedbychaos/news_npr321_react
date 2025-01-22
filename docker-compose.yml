@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  news:
+    image: zhezhuky/news_npr321
+    ports:
+      - "3000:3000"
+    networks:
+      - dashboard_network
+
+networks:
+  dashboard_network:
